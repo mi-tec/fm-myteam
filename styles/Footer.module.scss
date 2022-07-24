@@ -1,0 +1,15 @@
+.footer {
+    background: var(--color-secondary-dark-green);
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+    .component {
+        &__footer {
+            &--address,
+            &--copyright {
+                color: var(--color-primary-white);
+                opacity: 0.6;
+            }
+        }
+    }
+}
