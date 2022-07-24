@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-primary-midnight-green: #014e56;
+    --color-primary-light-coral: #f67e7e;
+    --color-primary-white: #ffffff;
+    --color-secondary-rapture-blue: #79c8c7;
+    --color-secondary-police-blue: #2c6269;
+    --color-secondary-deep-jungle-green: #004047;
+    --color-secondary-sacramento-state-green: #012f34;
+    --color-secondary-dark-green: #002529;
+    --font-livvic: "Livvic", sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-livvic);
+    color: var(--color-primary-white);
+    overflow-x: hidden;
+    height: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 700;
+}
+
+h1.small {
+    font-size: 64px;
+    line-height: 56px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.text-one {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.text-two {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.text-light-coral {
+    color: var(--color-primary-light-coral);
+}
+
+.button {
+    padding: 9px 33px 11px 32px;
+    border: 2px solid var(--color-primary-white);
+    border-radius: 24px;
+}
+
+/* Button Primary - Light Styles */
+.button-primary-light {
+    background: transparent;
+    color: var(--color-primary-white);
+}
+
+.button-primary-light:hover {
+    background: var(--color-primary-white);
+    color: var(--color-secondary-dark-green);
+}
+
+/* Button Secondary - Light Styles */
+.button-secondary-light {
+    background: var(--color-primary-white);
+    color: var(--color-secondary-dark-green);
+}
+
+.button-secondary-light:hover {
+    background-color: var(--color-secondary-rapture-blue);
+    border: 2px solid var(--color-secondary-rapture-blue);
+}
+
+.button-dark {
+    background: var(--color-primary-white);
+    border: 2px solid var(--color-secondary-dark-green);
+    color: var(--color-secondary-dark-green);
+}
+
+.button-dark:hover {
+    background: var(--color-secondary-dark-green);
+    color: var(--color-primary-white);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+    body {
+        color: white;
+        background: black;
+    }
+}

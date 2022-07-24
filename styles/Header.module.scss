@@ -1,0 +1,99 @@
+.header {
+    background-color: var(--color-primary-midnight-green);
+    .component {
+        &__header {
+            &--navigation {
+                padding: 7rem 3rem 0;
+                &.mobile-hidden {
+                    position: absolute;
+                    right: -1000px;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+                &.mobile-show {
+                    opacity: 1;
+                    visibility: visible;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    min-width: 255px;
+                    height: 100vh;
+                    background: var(--color-secondary-police-blue);
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    li {
+                        a {
+                            color: var(--color-primary-white);
+                        }
+                    }
+                }
+
+                &-image {
+                    position: absolute;
+                    bottom: 0;
+                    margin-left: 215px;
+                    transform: translateX(-50%);
+                }
+            }
+
+            &--contact-us {
+                display: block;
+                margin-top: 2.25rem;
+            }
+
+            &--hamburger {
+                position: absolute;
+                right: 0;
+                .line {
+                    width: 20px;
+                    height: 3px;
+                    background-color: #ecf0f1;
+                    display: block;
+                    margin: 4px auto;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &.is-active {
+                    position: fixed;
+                    right: 24px;
+                    .line {
+                        &:nth-child(2) {
+                            opacity: 0;
+                        }
+
+                        &:nth-child(1) {
+                            transform: translateY(7px) rotate(45deg);
+                        }
+
+                        &:nth-child(3) {
+                            transform: translateY(-7px) rotate(-45deg);
+                        }
+                    }
+                }
+            }
+        }
+
+        &__hero {
+            max-width: 327px;
+            text-align: center;
+            h1 {
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+            }
+
+            p {
+                margin-top: 1.125rem;
+            }
+        }
+
+        &__headerimage {
+            max-width: 327px;
+            margin: 97px auto 0;
+        }
+    }
+}
