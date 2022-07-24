@@ -11,7 +11,7 @@ function Nav({ clickHandler }) {
                     : `${styles["mobile-hidden"]}`
             }`}
         >
-            <ul className="navigation">
+            <ul className="navigation space-y-6">
                 <li>
                     <Link href="/">
                         <a>home</a>

@@ -20,12 +20,12 @@
                     min-width: 255px;
                     height: 100vh;
                     background: var(--color-secondary-police-blue);
+                    z-index: 1;
                 }
 
                 ul {
                     display: flex;
                     flex-direction: column;
-                    gap: 24px;
                     li {
                         a {
                             color: var(--color-primary-white);
@@ -61,6 +61,7 @@
                 &.is-active {
                     position: fixed;
                     right: 24px;
+                    z-index: 2;
                     .line {
                         &:nth-child(2) {
                             opacity: 0;

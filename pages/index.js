@@ -10,17 +10,9 @@ export default function Home() {
             <Head>
                 <title>My Team</title>
             </Head>
-            <div className={styles.container}>
-                <main className={styles.main}>
-                    <a className="button button-primary-light text-one">
-                        Contact Us
-                    </a>
-                    <a className="button button-secondary-light text-one">
-                        Contact Us
-                    </a>
-                    <a className="button button-dark text-one">Contact Us</a>
-                </main>
-            </div>
+            <main className="content-wrapper">
+                <section className="component"></section>
+            </main>
         </>
     );
 }
