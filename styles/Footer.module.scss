@@ -4,6 +4,8 @@
     line-height: 25px;
     font-weight: 600;
     .component {
+        max-width: 327px;
+        max-width: 0 auto;
         &__footer {
             &--address,
             &--copyright {
