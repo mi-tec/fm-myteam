@@ -1,6 +1,7 @@
 import Head from "next/head";
 
-import Hero from "../../components/Hero/Hero";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 export default function About() {
     return (
@@ -8,11 +9,14 @@ export default function About() {
             <Head>
                 <title>About</title>
             </Head>
-            <Hero
-                title={`About`}
-                content={`We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.`}
+            <Header
+                title="About Us"
+                content="Finding the right people and building high performing teams can
+                be hard. Most companies aren’t tapping into the abundance of
+                global talent. We’re about to change that."
             />
             <main></main>
+            <Footer />
         </>
     );
 }

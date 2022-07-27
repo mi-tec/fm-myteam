@@ -8,7 +8,7 @@ import Hero from "../Hero/Hero";
 
 import styles from "../../styles/Header.module.scss";
 
-export default function Header() {
+export default function Header({ title, content }) {
     const [hamburgeract, setHamburgerAct] = useState(false);
 
     const hamburgerEvent = () => {
@@ -40,7 +40,7 @@ export default function Header() {
                     <span className={`${styles["line"]}`}></span>
                 </div>
             </div>
-            <Hero />
+            <Hero title={title} content={content} />
             <div className={`${styles["component__headerimage"]}`}>
                 <img
                     src="/assets/images/bg-pattern-home-2.svg"

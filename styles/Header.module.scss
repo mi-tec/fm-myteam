@@ -1,6 +1,8 @@
 .header {
     background-color: var(--color-primary-midnight-green);
     .component {
+        max-width: 327px;
+        max-width: 0 auto;
         &__header {
             &--navigation {
                 padding: 7rem 3rem 0;
